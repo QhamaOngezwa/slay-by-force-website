@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slay By 4orCe website</title>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="heading">
+      <h1>✂SlayBy4orCe<span class="scissor-emoji">✂</span></h1>
+      <nav class="nav-links">
+        <a href="braids-by-qhama-website.html">Home</a>
+        <a href="about-us.html">About</a>
+
+        <a href="gallery.html">Gallery</a>
+      </nav>
+    </header>
+
+    <div class="image-slideshow">
+      <div class="slide">
+        <img
+          src="https://i.pinimg.com/736x/44/49/8b/44498b4cd4ce96e2ac81d80fe3f49d87.jpg"
+          alt="braid 1"
+        />
+      </div>
+
+      <div class="slide">
+        <img
+          src="https://i.pinimg.com/736x/a1/cd/4d/a1cd4df78e566fe2c49d1517e30bc802.jpg"
+          alt=""
+        />
+      </div>
+      <div class="slide">
+        <img
+          src="https://i.pinimg.com/736x/62/9b/1a/629b1a5e8218e737f084eea90cfd416a.jpg"
+          alt=""
+        />
+      </div>
+      <div class="slide">
+        <img
+          src="https://i.pinimg.com/736x/0b/9e/5b/0b9e5be5dd529ab8e83fce8d33d78ec5.jpg"
+          alt="braid 2"
+        />
+      </div>
+      <div class="slide">
+        <img
+          src="https://i.pinimg.com/736x/72/ea/a1/72eaa1de518af75938cd5310c2d1c666.jpg"
+          alt="braid 3"
+        />
+      </div>
+
+      <div class="slide">
+        <img
+          src="https://i.pinimg.com/736x/7c/6c/89/7c6c890c995b34682c9befb41fb1f049.jpg"
+          alt="braid 1"
+        />
+      </div>
+    </div>
+
+    <div class="section-one">
+      <img
+        src="https://i.pinimg.com/736x/06/ab/5d/06ab5d6c3e522296f2cc1ea451e7dffa.jpg"
+        alt="image 2"
+      />
+      <p>
+        Slay By 4orCe <br />
+        &<br />
+        Be Bold!
+      </p>
+    </div>
+    <div class="section-two">
+      <p>
+        Book Your Slot Now <br />
+        To<br />
+        Feel Fabulous!
+      </p>
+      <img
+        src="https://i.pinimg.com/736x/42/ab/15/42ab15c4b1afe3c7311e834bc7e840a8.jpg"
+        alt="image 1"
+      />
+    </div>
+
+    <div class="contact-info">
+      <img src="" alt="" />
+      <img src="" alt="" />
+      <img src="" alt="" />
+      <img src="" alt="" />
+    </div>
+
+    <script>
+      let slideIndex = 0;
+      const slides = document.querySelectorAll(".slide");
+
+      function showSlides() {
+        slides.forEach((slide, index) => {
+          slide.style.display = index === slideIndex ? "block" : "none";
+        });
+        slideIndex = (slideIndex + 1) % slides.length;
+      }
+
+      showSlides(); // show the first slide
+      setInterval(showSlides, 3000);
+    </script>
+  </body>
+</html>
